@@ -26,7 +26,7 @@ package
 		override public function update():void
 		{
 			e = FP.world.nearestToEntity("enemy", this);
-			if (e != null) {a = FP.angle(this.x, this.y, e.x, e.y) * Math.PI / 180;}
+			if (e != null) {a = FP.angle(this.x, this.y, (e.x+width/2),(e.y+e.height/2)) * Math.PI / 180;}
 			else {a = 90;}
 			y -= FP.elapsed * GC.BULLET_SPEED * Math.sin(a);
 			x += FP.elapsed * GC.BULLET_SPEED * Math.cos(a);
