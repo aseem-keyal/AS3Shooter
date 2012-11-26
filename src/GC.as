@@ -15,7 +15,8 @@ package
 		[Embed(source = '/assets/enemy.png')]
 		public static const GFX_ENEMY:Class;
 		
-		public static const GFX_BULLET:BitmapData = new BitmapData(2, 2, false, 0xffffffff);
+		public static const GFX_BULLET:BitmapData = new BitmapData(2, 2, false, 0xFFFFFF);
+		public static const GFX_MISSILE:BitmapData = new BitmapData(2, 2, false, 0xFF2B2B);
 		public static const BULLET_SPEED:Number = 120;
 		public static const ENEMY_SPEED:Number = 40;
 		public static const ENEMY_SPAWN_CHANCE:Number = 1 - 1/60;

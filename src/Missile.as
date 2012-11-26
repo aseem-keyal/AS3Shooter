@@ -20,7 +20,7 @@ package
 			this.y = y;
 			a = FP.angle(this.x, this.y, 0, 0) * Math.PI /180;
 			this.setHitbox(2, 2);
-			this.graphic = new Image(GC.GFX_BULLET);
+			this.graphic = new Image(GC.GFX_MISSILE);
 		}
 		
 		override public function update():void
